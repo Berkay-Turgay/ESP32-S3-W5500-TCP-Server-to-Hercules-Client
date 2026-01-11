@@ -35,7 +35,7 @@ Both devices will now be on the same network (192.168.1.x) with unique addresses
 
 The original W5500 Ethernet library requires modifications to be compatible with ESP32's Server class architecture. Follow these steps to update the library files:
 
-** 1. Modify the Ethernet.h file: **
+**1. Modify the Ethernet.h file:**
 
 Locate the EthernetServer class definition and update it to be compatible with ESP32's Server class:
 
@@ -77,7 +77,8 @@ public:
 };
 ```
 
-** 2. Modify the EthernetServer.cpp file: **
+**2. Modify the EthernetServer.cpp file:**
+
 Rename the begin() function to _begin() in the implementation file:
 
 ```
