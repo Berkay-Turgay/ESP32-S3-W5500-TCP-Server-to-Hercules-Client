@@ -19,7 +19,7 @@ Select Internet Protocol Version 4 (TCP/IPv4) → click Properties
 
 Configure the IP settings as shown in the below
 
-(Image showing example configuration)
+(Image showing Settings-Images File)
 
 Example Configuration:
 
