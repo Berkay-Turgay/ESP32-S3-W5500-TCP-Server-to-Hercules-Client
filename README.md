@@ -108,7 +108,7 @@ if (!listening) _begin();  // Changed from begin() to _begin()
 
 if (!listening) _begin();  // Changed from begin() to _begin()
 
-Important Notes:
+**Important Notes:**
 
 These modifications ensure proper inheritance from ESP32's Server class
 
