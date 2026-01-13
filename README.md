@@ -1,11 +1,11 @@
 # ESP32-S3-W5500-TCP-Server-to-Hercules-Client
 ESP32 TCP Server Example using W5500 Ethernet Module. Configures ESP32 as a TCP server to communicate with Hercules TCP Client, enabling data exchange over Ethernet connection.
 
-# Project Development Environment
+## Project Development Environment
 
 This project was developed using Visual Studio Code with the PlatformIO IDE extension for ESP32-S3
 
-# Network Configuration for ESP32 Server and PC Client
+## Network Configuration for ESP32 Server and PC Client
 
 When using ESP32 as a server and a PC as a client, both devices must be on the same local network. Their IP addresses should share the same network prefix (first three octets) but have different host identifiers (last octet).
 
@@ -35,7 +35,7 @@ Subnet Mask: 255.255.255.0
 
 Both devices will now be on the same network (192.168.1.x) with unique addresses.
 
-# Library Modifications for ESP32 Compatibility
+## Library Modifications for ESP32 Compatibility
 
 The original W5500 Ethernet library requires modifications to be compatible with ESP32's Server class architecture. Follow these steps to update the library files:
 
@@ -122,7 +122,7 @@ The statusreport() function is removed as it's not part of ESP32's Server interf
 
 The dual begin() function approach allows both parameterized and parameter-less calls
 
-# PlatformIO Configuration for ESP32-S3
+## PlatformIO Configuration for ESP32-S3
 When using PlatformIO with an ESP32-S3 board, the following configuration must be added to platformio.ini:
 
 [env:esp32-s3-devkitc-1]
